@@ -1,5 +1,12 @@
-const PropertyDetails = () => {
-  return <div>PropertyDetails</div>;
-};
+/* import PropertyDetails from "../components/sections/PropertyDetails";
 
-export default PropertyDetails;
+function App() {
+  return (
+    <div className="min-h-screen bg-[var(--color-gray-05)]">
+      <PropertyDetails />
+    </div>
+  );
+}
+
+export default App;
+ */
