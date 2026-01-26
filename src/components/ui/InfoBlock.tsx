@@ -24,7 +24,18 @@ const InfoBlock = () => {
         >
             <motion.div variants={item} className="mb-5 pb-6 border-b border-white/20">
                 <h3 className="text-white text-xl font-bold mb-4">Description</h3>
-                <p className="text-[var(--color-gray-60)] text-base leading-relaxed">
+                <p className="
+                    text-gray-60 
+                    font-urbanist 
+                    font-medium 
+                    text-[14px]     
+                    md:text-[15px]   
+                    lg:text-[16px]   
+                    xl:text-[18px]   
+                    leading-[150%] 
+                    tracking-[0%]
+                    mb-4
+                    ">
                     Discover your own piece of paradise with the Seaside Serenity Villa. With an open
                     floor plan, breathtaking ocean views from every room, and direct access to
                     a pristine sandy beach, this property is the epitome of coastal living.
@@ -35,26 +46,53 @@ const InfoBlock = () => {
                 className="grid grid-cols-2 gap-6 pt-2 lg:grid-cols-3 lg:gap-6"
             >
                 <motion.div variants={item} className="flex flex-col gap-3 group">
-                    <div className="flex items-center gap-3 text-white/60 text-sm">
+                    <div className="flex items-center gap-1 text-white/60 text-sm">
                         <img
                             src="/public/assets/icons/Bedroom.svg"
-                            className="w-5 h-5 opacity-60 transition-transform duration-300 group-hover:scale-110"
+                            className="w-6 h-6 opacity-60 transition-transform duration-300 group-hover:scale-110"
                         />
-                        <span>Bedrooms</span>
+                        <span className="
+                            font-urbanist 
+                            font-medium 
+                            tracking-[0%]
+                            text-[14px]
+                            leading-[150%]
+                            w-[115px]
+                            h-[21px]
+                            xl:text-[18px]
+                            xl:leading-[150%]
+                            xl:w-[171px]
+                            xl:h-[27px]
+                            ">
+                            Bedrooms
+                        </span>
                     </div>
                     <span className="text-white text-2xl font-bold">04</span>
                 </motion.div>
 
                 <motion.div
                     variants={item}
-                    className="flex flex-col gap-3 border-l border-white/20 pl-6 lg:border-x lg:px-6 group"
-                >
-                    <div className="flex items-center gap-3 text-white/60 text-sm">
+                    className="flex flex-col gap-3 border-l border-white/20 pl-2.5 lg:border-x lg:px-3 group">
+                    <div className="flex items-center gap-1 text-white/60 text-sm">
                         <img
                             src="/public/assets/icons/Bathroom.svg"
-                            className="w-5 h-5 opacity-60 transition-transform duration-300 group-hover:scale-110"
+                            className="w-6 h-6 opacity-60 transition-transform duration-300 group-hover:scale-110"
                         />
-                        <span>Bathrooms</span>
+                        <span className="
+                                font-urbanist 
+                                font-medium 
+                                tracking-[0%]
+                                text-[14px]
+                                leading-[150%]
+                                w-[115px]
+                                h-[21px]
+                                xl:text-[18px]
+                                xl:leading-[150%]
+                                xl:w-[171px]
+                                xl:h-[27px]
+                                ">
+                            Bathrooms
+                        </span>
                     </div>
                     <span className="text-white text-2xl font-bold">03</span>
                 </motion.div>
@@ -68,14 +106,46 @@ const InfoBlock = () => {
                     variants={item}
                     className="flex flex-col gap-3 col-span-2 lg:col-span-1 group"
                 >
-                    <div className="flex items-center gap-3 text-white/60 text-sm">
+                    <div className="flex items-center gap-1 text-white/60 text-sm">
                         <img
                             src="/public/assets/icons/area.svg"
-                            className="w-5 h-5 opacity-60 transition-transform duration-300 group-hover:scale-110"
+                            className="w-6 h-6 opacity-60 transition-transform duration-300 group-hover:scale-110"
                         />
-                        <span>Area</span>
+                        <span className="
+                                font-urbanist 
+                                font-medium 
+                                tracking-[0%]
+                                text-[14px]
+                                leading-[150%]
+                                w-[115px]
+                                h-[21px]
+                                xl:text-[18px]
+                                xl:leading-[150%]
+                                xl:w-[171px]
+                                xl:h-[27px]
+                                ">
+                            Area
+                        </span>
                     </div>
-                    <span className="text-white text-[20px] font-bold whitespace-nowrap">
+                    <span className="
+                            text-white 
+                            font-urbanist 
+                            font-semibold 
+                            text-[18px]       
+                            leading-[150%]     
+                            w-full 
+                            max-w-[318px]      
+                            h-[27px]           
+                            md:text-[19px]     
+                            md:leading-[150%]  
+                            md:max-w-[250px]
+                            md:h-auto
+                            xl:text-[20px]     
+                            xl:leading-[150%]  
+                            xl:w-[170px]       
+                            xl:h-[30px]        
+                            whitespace-nowrap
+                            ">
                         2,500 Square Feet
                     </span>
                 </motion.div>

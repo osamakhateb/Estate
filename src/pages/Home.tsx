@@ -1,4 +1,4 @@
-import PropertyCard from '../components/ui/PropertyCard';
+/* import PropertyCard from '../components/ui/PropertyCard';
 import { propertiesData } from '../data/propertiesData';
 
 const Home = () => {
@@ -34,4 +34,20 @@ const Home = () => {
   );
 };
 
-export default Home; 
+export default Home;  */
+
+
+
+
+
+import PropertyDetails from "../components/sections/PropertyDetails";
+
+function App() {
+  return (
+    <div className="min-h-screen bg-[var(--color-gray-05)]">
+      <PropertyDetails />
+    </div>
+  );
+}
+
+export default App;

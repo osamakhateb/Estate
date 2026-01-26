@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 type FeatureItemProps = {
   text: string;
   icon?: string;
@@ -15,41 +16,68 @@ const FeatureItem = ({
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
       className="
-        relative group flex items-start gap-4 p-4
-        bg-[linear-gradient(90deg,#1A1A1A_0%,rgba(26,26,26,0)_100%)]
-        overflow-hidden
-      "
+            relative 
+            group 
+            flex 
+            items-start 
+            gap-4                   
+            w-full
+            min-h-[80px]             
+            py-6                     
+            px-5                     
+            sm:py-5                  
+            sm:px-4                 
+            md:py-4                  
+            md:px-2                  
+            border-l-2               
+            border-primary-60       
+            bg-[linear-gradient(90deg,#1A1A1A_0%,rgba(26,26,26,0)_100%)]
+            rounded-r-lg             
+            overflow-hidden
+            hover:border-white/30    
+            transition-all duration-500
+          "
     >
       <div
         className="
-          absolute inset-0
-          bg-[radial-gradient(circle_at_left,rgba(139,92,246,0.15),transparent_60%)]
-          opacity-0 group-hover:opacity-100
-          transition-opacity duration-500
+          bg-[radial-gradient(circle_at_left,rgba(139,92,246,0.2),transparent_70%)]
+          opacity-0 
+          group-hover:opacity-100
+          transition-opacity duration-700
         "
       />
-
-      <div className="absolute left-0 top-0 h-full w-[2px] bg-purple-500 rounded-full" />
-
-      <div className="z-10">
+      <div className="z-10 flex-shrink-0 mt-1">
         <img
           src={icon}
           alt="feature icon"
-          className="
-            w-6 h-6
-            transition-transform duration-300
-            group-hover:scale-125 group-hover:rotate-6
+          className="           
+            transition-all duration-500
+            group-hover:opacity-100
+            group-hover:scale-110
+            mt-2
           "
         />
       </div>
-      <p
-        className="
-          z-10 flex-1 max-w-[488px] text-sm
-          text-[var(--color-gray-60)]
-          transition-all duration-500
-          group-hover:text-white group-hover:tracking-wide
-        "
-      >
+      
+      <p className="
+        z-10 
+        flex-1 
+        font-urbanist 
+        font-medium 
+        text-gray-60
+        transition-all duration-500
+        group-hover:text-white 
+        group-hover:tracking-wide
+        text-[15px]               
+        sm:text-[16px]            
+        md:text-[17px]            
+        lg:text-[18px]            
+        leading-[160%]            
+        tracking-[0.01em]        
+        break-words
+        overflow-wrap-anywhere
+        my-auto                   
+      ">
         {text}
       </p>
     </motion.div>
